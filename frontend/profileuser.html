@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INTERA | User Profile</title>
+    <link rel="stylesheet" href="profileuser.css">
+</head>
+<body>
+
+<div class="profile-wrapper">
+    <div class="profile-card">
+        <h1>INTERA</h1>
+        <p class="subtitle">User Profile</p>
+
+        <form id="profileForm">
+            <div class="input-group">
+                <label>Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+
+            <div class="input-group">
+                <label>Date of Birth</label>
+                <input type="date" id="dob">
+            </div>
+
+            <div class="input-group">
+                <label>Age</label>
+                <input type="number" id="age" placeholder="Auto calculated" readonly>
+            </div>
+
+            <div class="input-group">
+                <label>Work</label>
+                <textarea id="work" placeholder="Your profession or role"></textarea>
+            </div>
+
+            <div class="input-group">
+                <label>Personal</label>
+                <textarea id="personal" placeholder="Personal preferences"></textarea>
+            </div>
+
+            <div class="input-group">
+                <label>Business</label>
+                <textarea id="business" placeholder="Business details (if any)"></textarea>
+            </div>
+
+            <button type="submit">Save Profile</button>
+        </form>
+    </div>
+</div>
+
+<script src="profileuser.js"></script>
+</body>
+</html>

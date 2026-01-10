@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* NAVBAR */
+.navbar {
+    height: 70px;
+    padding: 0 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo-main {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    letter-spacing: 3px;
+}
+
+.logo-sub {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #b08d57;
+    text-transform: uppercase;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #444;
+}
+
+.nav-links a.active {
+    color: #b08d57;
+}
+
+/* ABOUT WRAPPER */
+.about-wrapper {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* ABOUT CARD */
+.about-card {
+    max-width: 900px;
+    padding: 50px;
+
+    background: rgba(255,255,255,0.96);
+    border-radius: 20px;
+
+    box-shadow: 0 30px 70px rgba(0,0,0,0.35);
+}
+
+/* HEADINGS */
+.about-card h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #2c2c2c;
+    margin-bottom: 20px;
+}
+
+.about-block h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #2c2c2c;
+    margin-bottom: 8px;
+}
+
+/* TEXT */
+.intro {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.about-block p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* CONTENT GRID */
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+}

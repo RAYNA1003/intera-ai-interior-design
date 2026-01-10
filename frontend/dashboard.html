@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INTERA | Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<!-- TOP NAVBAR -->
+<header class="navbar">
+
+    <!-- LOGO -->
+    <div class="logo">
+        <span class="logo-main">INTERA</span>
+        <span class="logo-sub">interior studio</span>
+    </div>
+
+    <!-- NAV LINKS -->
+    <nav class="nav-links">
+    <a href="dashboard.html">Home</a>
+    <a href="designs.html">Available Designs</a>
+    <a href="chat.html">Chat with Consultant</a>
+    <a href="aboutuser.html">About Us</a>
+</nav>
+
+
+    <!-- ICONS -->
+    <div class="nav-icons">
+        <div class="profile-icon" title="View Profile">👤</div>
+        <div class="menu-icon" id="menuBtn">☰</div>
+    </div>
+</header>
+
+<!-- SIDE MENU -->
+<div class="side-menu" id="sideMenu">
+
+    <p class="menu-title">My Space</p>
+
+    <div class="menu-item">
+        <span></span>
+        <a href="#">Saved Designs</a>
+    </div>
+
+    <div class="menu-item">
+        <span></span>
+        <a href="#">Liked Designs</a>
+    </div>
+
+    <div class="menu-item">
+        <span></span>
+        <a href="#">Feedback & Reviews</a>
+    </div>
+
+    <div class="menu-item">
+        <span></span>
+        <a href="#">Rewards</a>
+    </div>
+
+    <div class="menu-divider"></div>
+
+    <p class="menu-title">Settings</p>
+
+    <div class="menu-item">
+        <span>🌐</span>
+        <a href="#">Preferred Language</a>
+    </div>
+
+</div>
+
+<!-- MAIN DASHBOARD -->
+<main class="dashboard">
+    <div class="dashboard-card">
+        <h1>Design Your Space with AI</h1>
+        <p class="tagline">
+            Describe your space and let INTERA craft a personalized interior design.
+        </p>
+
+        <textarea
+            placeholder="Example: A modern minimal living room with beige tones, wooden textures, and soft lighting..."
+        ></textarea>
+
+        <button>Generate Design</button>
+    </div>
+</main>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

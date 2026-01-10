@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INTERA | Chat with Consultant</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+        <span class="logo-main">INTERA</span>
+        <span class="logo-sub">interior studio</span>
+    </div>
+
+    <nav class="nav-links">
+        <a href="dashboard.html">Home</a>
+        <a href="designs.html">Available Designs</a>
+        <a class="active" href="#">Chat with Consultant</a>
+        <a href="aboutuser.html">About Us</a>
+    </nav>
+</header>
+
+<!-- CHAT CONTAINER -->
+<section class="chat-wrapper">
+
+    <div class="chat-card">
+
+        <!-- CHAT HEADER -->
+        <div class="chat-header">
+            <h2>Interior Design Consultation</h2>
+            <p>Professional guidance for your space</p>
+        </div>
+
+        <!-- CHAT MESSAGES -->
+        <div class="chat-messages" id="chatMessages">
+
+            <div class="message consultant">
+                <p>
+                    Welcome to INTERA.  
+                    Please describe your space and design preferences, and I’ll be happy to assist you.
+                </p>
+            </div>
+
+        </div>
+
+        <!-- CHAT INPUT -->
+        <div class="chat-input">
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Type your message here..."
+            />
+            <button id="sendBtn">Send</button>
+        </div>
+
+    </div>
+
+</section>
+
+<script src="chat.js"></script>
+</body>
+</html>
