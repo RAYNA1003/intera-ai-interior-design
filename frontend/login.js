@@ -16,6 +16,17 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 });
 
 function login() {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    if (username === "" || password === "") {
+        alert("Please fill all fields");
+        return;
+    }
+
+    // simulate login
     localStorage.setItem("loggedIn", "true");
+    localStorage.setItem("username", username);
+
     window.location.href = "dashboard.html";
 }

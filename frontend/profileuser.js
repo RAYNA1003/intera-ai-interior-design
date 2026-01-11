@@ -19,3 +19,5 @@ document.getElementById("profileForm").addEventListener("submit", (e) => {
     e.preventDefault();
     alert("Profile saved successfully!");
 });
+document.getElementById("username").innerText =
+    localStorage.getItem("username");
