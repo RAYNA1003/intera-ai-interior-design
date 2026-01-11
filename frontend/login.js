@@ -14,3 +14,8 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
 
   // window.location.href = "dashboard.html";
 });
+
+function login() {
+    localStorage.setItem("loggedIn", "true");
+    window.location.href = "dashboard.html";
+}

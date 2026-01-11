@@ -22,6 +22,7 @@
     <a href="designs.html">Available Designs</a>
     <a href="chat.html">Chat with Consultant</a>
     <a href="aboutuser.html">About Us</a>
+
 </nav>
 
 
@@ -85,5 +86,11 @@
 </main>
 
 <script src="dashboard.js"></script>
+<script>
+    if (!localStorage.getItem("loggedIn")) {
+        window.location.href = "loginuser.html";
+    }
+</script>
+
 </body>
 </html>
