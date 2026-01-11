@@ -69,6 +69,15 @@ body {
     font-size: 24px;
     cursor: pointer;
 }
+h2{
+      color:white;
+      font-family: 'Poppins', sans-serif;
+      
+     
+      text-align: center;
+      justify-content: center;
+      display: flex;
+}
 
 /* SIDE MENU */
 .side-menu {
