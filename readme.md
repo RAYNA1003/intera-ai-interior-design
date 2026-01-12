@@ -5,7 +5,16 @@ INTERA is a web-based platform that helps users visualize interior designs using
 
 ## Tech Stack
 - Frontend: React (Lovable)
-- Backend: Fenado
+- Backend:
+-  Node.js + Express
+
+Firebase
+
+FastAPI
+
+Flask
+
+Custom JS backend
 - AI: Image Generation API
 - Hosting: Replit
 
