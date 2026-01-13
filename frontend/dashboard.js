@@ -12,3 +12,8 @@ menuBtn.addEventListener("click", () => {
         menuOpen = false;
     }
 });
+function logout() {
+    localStorage.clear();
+    window.location.href = "loginuser.html";
+}
+

@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
+<h2>Welcome, <span id="user"></span></h2>
+
+<script>
+    document.getElementById("user").innerText =
+        localStorage.getItem("username");
+</script>
 
 <!-- TOP NAVBAR -->
 <header class="navbar">
@@ -22,6 +28,7 @@
     <a href="designs.html">Available Designs</a>
     <a href="consultant.html">Consultants</a>
     <a href="aboutuser.html">About Us</a>
+
 </nav>
 
 
@@ -29,6 +36,8 @@
     <div class="nav-icons">
         <div class="profile-icon" title="View Profile">👤</div>
         <div class="menu-icon" id="menuBtn">☰</div>
+        <button onclick="logout()">Logout</button>
+
     </div>
 </header>
 
@@ -85,5 +94,16 @@
 </main>
 
 <script src="dashboard.js"></script>
+<script>
+    if (!localStorage.getItem("loggedIn")) {
+        window.location.href = "loginuser.html";
+    }
+</script>
+<script>
+    if (!localStorage.getItem("loggedIn")) {
+        window.location.href = "loginuser.html";
+    }
+</script>
+
 </body>
 </html>

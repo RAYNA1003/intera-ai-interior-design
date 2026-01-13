@@ -61,5 +61,11 @@
 </section>
 
 <script src="chat.js"></script>
+<script>
+    if (!localStorage.getItem("loggedIn")) {
+        window.location.href = "loginuser.html";
+    }
+</script>
+
 </body>
 </html>

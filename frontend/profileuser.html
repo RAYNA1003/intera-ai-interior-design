@@ -54,5 +54,11 @@
 </div>
 
 <script src="profileuser.js"></script>
+<script>
+    if (!localStorage.getItem("loggedIn")) {
+        window.location.href = "loginuser.html";
+    }
+</script>
+
 </body>
 </html>
