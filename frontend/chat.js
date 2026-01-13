@@ -1,3 +1,12 @@
+// ===== CONSULTANT NAME HANDLING =====
+const consultant = localStorage.getItem("selectedConsultant");
+const consultantHeading = document.getElementById("consultantName");
+
+if (consultant && consultantHeading) {
+    consultantHeading.innerText = `Chat with ${consultant}`;
+}
+
+// ===== CHAT FUNCTIONALITY =====
 const input = document.getElementById("messageInput");
 const sendBtn = document.getElementById("sendBtn");
 const chatMessages = document.getElementById("chatMessages");
@@ -32,3 +41,8 @@ function sendMessage() {
         chatMessages.scrollTop = chatMessages.scrollHeight;
     }, 1000);
 }
+
+// ===== POINT 5: CLEAR CONSULTANT ON EXIT =====
+window.addEventListener("beforeunload", () => {
+    localStorage.removeItem("selectedConsultant");
+});

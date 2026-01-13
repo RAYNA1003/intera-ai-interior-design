@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INTERA | Designs</title>
+    <link rel="stylesheet" href="design-list.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="page-header">
+    <h1 id="pageTitle">Designs</h1>
+    <p>Explore curated interior designs</p>
+</header>
+
+<!-- FILTER BAR -->
+<section class="filter-bar">
+    <label for="budgetFilter">Budget:</label>
+    <select id="budgetFilter">
+        <option value="all">All</option>
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+    </select>
+</section>
+
+<!-- DESIGN GRID -->
+<section class="design-grid" id="designGrid">
+    <!-- Cards injected by JS -->
+</section>
+
+<script src="data/DesignData.js"></script>
+<script src="design-list.js"></script>
+</body>
+</html>

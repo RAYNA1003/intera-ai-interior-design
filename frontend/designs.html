@@ -17,7 +17,7 @@
     <nav class="nav-links">
         <a href="dashboard.html">Home</a>
         <a class="active" href="#">Available Designs</a>
-        <a href="chat.html">Chat with Consultant</a>
+        <a href="Consultants.html">Consultants</a>
         <a href="aboutuser.html">About Us</a>
     </nav>
 </header>
@@ -32,29 +32,38 @@
 <section class="design-grid">
 
     <!-- CARD -->
-    <div class="design-card">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Living Room">
-        <div class="card-actions">
-            <span class="icon like">♡</span>
-            <span class="icon save" title="Save Design">
-    <svg viewBox="0 0 24 24" class="bookmark-icon">
-        <path d="M6 2h12a1 1 0 0 1 1 1v19l-7-4-7 4V3a1 1 0 0 1 1-1z"/>
-    </svg>
-</span>
+    <!--living-->
+    <div class="design-card" onclick="openDesigns('living')">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Living Room">
 
+    <div class="card-actions">
+        <span class="icon like"
+              onclick="event.stopPropagation(); toggleLike(this)">♡</span>
 
-        </div>
-        <div class="card-content">
-            <h3>Living Room</h3>
-            <p>Elegant & welcoming spaces</p>
-        </div>
+        <span class="icon save"
+              title="Save Design"
+              onclick="event.stopPropagation(); saveDesign('living')">
+            <svg viewBox="0 0 24 24" class="bookmark-icon">
+                <path d="M6 2h12a1 1 0 0 1 1 1v19l-7-4-7 4V3a1 1 0 0 1 1-1z"/>
+            </svg>
+        </span>
     </div>
 
-    <div class="design-card">
+    <div class="card-content">
+        <h3>Living Room</h3>
+        <p>Elegant & welcoming spaces</p>
+    </div>
+</div>
+
+<!--bedroom-->
+    <div class="design-card" onclick="openDesigns('bedroom')">
         <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0" alt="Bedroom">
         <div class="card-actions">
-            <span class="icon like">♡</span>
-           <span class="icon save" title="Save Design">
+           <span class="icon like"
+              onclick="event.stopPropagation(); toggleLike(this)">♡</span>
+           <span class="icon save"
+              title="Save Design"
+              onclick="event.stopPropagation(); saveDesign('living')">
     <svg viewBox="0 0 24 24" class="bookmark-icon">
         <path d="M6 2h12a1 1 0 0 1 1 1v19l-7-4-7 4V3a1 1 0 0 1 1-1z"/>
     </svg>
@@ -65,12 +74,15 @@
             <p>Calm and personal retreats</p>
         </div>
     </div>
-
-    <div class="design-card">
+<!--kitchen-->
+    <div class="design-card" onclick="openDesigns('kitchen')">
         <img src="https://images.unsplash.com/photo-1600488999585-e4364713b90a" alt="Kitchen">
         <div class="card-actions">
-            <span class="icon like">♡</span>
-            <span class="icon save" title="Save Design">
+           <span class="icon like"
+              onclick="event.stopPropagation(); toggleLike(this)">♡</span>
+           <span class="icon save"
+              title="Save Design"
+              onclick="event.stopPropagation(); saveDesign('living')"> 
     <svg viewBox="0 0 24 24" class="bookmark-icon">
         <path d="M6 2h12a1 1 0 0 1 1 1v19l-7-4-7 4V3a1 1 0 0 1 1-1z"/>
     </svg>
@@ -80,12 +92,15 @@
             <p>Functional modern kitchens</p>
         </div>
     </div>
-
-    <div class="design-card">
+<!--kids room-->
+    <div class="design-card" onclick="openDesigns('kids room')">
         <img src="https://images.unsplash.com/photo-1586105251261-72a756497a11" alt="Kids Room">
         <div class="card-actions">
-            <span class="icon like">♡</span>
-            <span class="icon save" title="Save Design">
+            <span class="icon like"
+              onclick="event.stopPropagation(); toggleLike(this)">♡</span>
+           <span class="icon save"
+              title="Save Design"
+              onclick="event.stopPropagation(); saveDesign('living')">
     <svg viewBox="0 0 24 24" class="bookmark-icon">
         <path d="M6 2h12a1 1 0 0 1 1 1v19l-7-4-7 4V3a1 1 0 0 1 1-1z"/>
     </svg>
@@ -95,12 +110,15 @@
             <p>Creative & joyful interiors</p>
         </div>
     </div>
-
-    <div class="design-card">
+<!--offices-->
+    <div class="design-card" onclick="openDesigns('offices')">
         <img src="https://images.unsplash.com/photo-1497366216548-37526070297c" alt="Office">
         <div class="card-actions">
-            <span class="icon like">♡</span>
-            <span class="icon save" title="Save Design">
+           <span class="icon like"
+              onclick="event.stopPropagation(); toggleLike(this)">♡</span>
+           <span class="icon save"
+              title="Save Design"
+              onclick="event.stopPropagation(); saveDesign('living')">
     <svg viewBox="0 0 24 24" class="bookmark-icon">
         <path d="M6 2h12a1 1 0 0 1 1 1v19l-7-4-7 4V3a1 1 0 0 1 1-1z"/>
     </svg>
@@ -110,13 +128,16 @@
             <p>Focus-driven workspaces</p>
         </div>
     </div>
-
-    <div class="design-card">
+<!--commercial-->
+    <div class="design-card" onclick="openDesigns('commercial')">
         <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e
 " alt="Commercial">
         <div class="card-actions">
-            <span class="icon like">♡</span>
-            <span class="icon save" title="Save Design">
+            <span class="icon like"
+              onclick="event.stopPropagation(); toggleLike(this)">♡</span>
+           <span class="icon save"
+              title="Save Design"
+              onclick="event.stopPropagation(); saveDesign('living')">
     <svg viewBox="0 0 24 24" class="bookmark-icon">
         <path d="M6 2h12a1 1 0 0 1 1 1v19l-7-4-7 4V3a1 1 0 0 1 1-1z"/>
     </svg>

@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #f6f6f6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.nav-links a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-links .active {
+    color: #b08968;
+}
+
+/* Section */
+.consultant-section {
+    padding: 60px;
+    text-align: center;
+}
+
+.consultant-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+/* Card */
+.consultant-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.consultant-card img {
+    width: 90px;
+    border-radius: 50%;
+}
+
+.consultant-card h3 {
+    margin: 15px 0 5px;
+}
+
+.consultant-card span {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Buttons */
+.actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.actions button,
+.actions a {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.actions button {
+    background: #b08968;
+    color: white;
+}
+
+.actions a {
+    background: #333;
+    color: white;
+}

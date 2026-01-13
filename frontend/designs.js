@@ -1,19 +1,14 @@
-const likeIcons = document.querySelectorAll(".icon.like");
-const saveIcons = document.querySelectorAll(".icon.save");
+function openDesigns(category) {
+    localStorage.setItem("selectedCategory", category);
+    window.location.href = "design-list.html";
+}
 
-/* LIKE TOGGLE */
-likeIcons.forEach(icon => {
-    icon.addEventListener("click", () => {
-        icon.textContent = icon.textContent === "♡" ? "♥" : "♡";
-        icon.classList.toggle("liked");
-    });
-});
+function toggleLike(el) {
+    el.classList.toggle("liked");
+    el.innerText = el.classList.contains("liked") ? "♥" : "♡";
+}
 
-/* SAVE TOGGLE (INSTAGRAM STYLE) */
-
-saveIcons.forEach(icon => {
-    icon.addEventListener("click", () => {
-        icon.classList.toggle("saved");
-    });
-});
-
+function saveDesign(category) {
+    console.log("Saved category:", category);
+    // later → backend / localStorage
+}
